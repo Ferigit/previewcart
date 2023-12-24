@@ -1,35 +1,62 @@
-# Next.js + Jest
+# Next.js(v.14) + Jest + TypeScript + Storybook + react-hook-form
 
-This example shows how to configure Jest to work with Next.js.
+Approach:
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
+1. PreviewCart application is created in stack Next.js, TypeScript, Tailwindcss, Jest, react-testing-library, Storybook.
+2. Marketplace (home page) is implemented and filters on projects list as query param is implemented.
+3. Cart page is created so and manage card is implemented, so, user can see the cart and update every project volumn or remove the project from cart by asking.(to improve we can get confirmation in modal)
+4. Full dynamic form and validation which supports controlled and uncontrolled variants of unit components is implemented by react-hook-form and yup.
+5. Unit components such as TextInput, Select, Button, Form, Image are implemented.(todo we can complete the dynamic form to support all input types)
+6. Unit tests for TextInput component is implemented.(todo:we can complete all our own usecases tests).
+7. Storybook for TextInput and Button components are imlemented.(todo:we can complete all our own usecases stories).
+8. Toast notification is added.
+9. Linter is configured.
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-jest&project-name=with-jest&repository-name=with-jest)
 
 ## How to Use
+> **Note:** Since Next.js version is v.14, so running platform should have Node.js version 18.17 or later.
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+[Node.js 18.17](https://nodejs.org/en) or later.
 
-In your terminal, run the following command:
 
+## Clone repo
 ```bash
-npx create-next-app --example with-jest with-jest-app
+git clone https://github.com/Ferigit/previewcart.git
 ```
 
+## Setup and Run Locally
 ```bash
-yarn create next-app --example with-jest with-jest-app
+
+1. cd root dir
+2. pull main branch
+3. yarn (or npm install)
+4. yarn run dev (or npm run dev)
+
 ```
+## Run the Storybook
+```bash
+
+1. cd root dir
+2. pull main branch
+3. yarn (or npm install)
+4. yarn storybook (or npm run storybook)
+
+```
+## Run tests
+```bash
+
+1. cd root dir
+2. pull main branch
+3. yarn (or npm install)
+4. yarn test (or npm run test)
+
+```
+## Build
 
 ```bash
-pnpm create next-app --example with-jest with-jest-app
+1. cd root dir
+3. yarn (or npm install)
+3. yarn build (or npm run build)
 ```
 
-## Running Tests
 
-```bash
-npm test
-```
