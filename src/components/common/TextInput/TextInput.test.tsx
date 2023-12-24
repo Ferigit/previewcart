@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 import { render, screen, fireEvent } from "@testing-library/react";
-import { TextInput } from "./index";
+import { expect } from "@storybook/test";
 import { FieldErrors } from "@/src/types/form";
 import { FieldValues, UseFormRegister } from "react-hook-form";
-import { expect } from "@storybook/test";
+import { TextInput } from "./index";
 
 interface TestProps {
   id: string;

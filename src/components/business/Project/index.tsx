@@ -1,9 +1,9 @@
 //Project component to render each project
 import React from "react";
 import clsx from "classnames";
-import { IProject } from "@/src/types/project";
-import { useCartStore } from "src/store/cartstore";
 import { Image } from "@/src/components/common/index";
+import { useCartStore } from "src/store/cartstore";
+import { IProject } from "@/src/types/project";
 import { CardOverLayer } from "./ProjectOverLayer";
 import { ProjectFeature } from "./ProjectFeature";
 

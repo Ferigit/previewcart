@@ -1,12 +1,12 @@
 "use client";
 
+import clsx from "classnames";
+import { useRouter } from "next/router";
 import { IProject } from "@/src/types/project";
 import { Project } from "@/src/components/business/Project";
 import { AddToCartForm } from "@/src/components/business/AddToCartForm";
 import { FilterInput } from "@/src/components/business/FilterInput";
-import { useRouter } from "next/router";
-import { useCartStore } from "src/store/cartstore";
-import clsx from "classnames";
+import { useCartStore } from "@/src/store/cartstore";
 interface IProps {
   projects: IProject[];
 }

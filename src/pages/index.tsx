@@ -1,8 +1,8 @@
 //Home page to list projects
+import Head from "next/head";
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
 import MarketPlace from "@/src/components/business/MarketPlace";
 import { IProject } from "@/src/types/project";
-import Head from "next/head";
 import { callApi } from "@/src/libs/api";
 import { BASE_URL } from "@/src/constants/db";
 

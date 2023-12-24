@@ -1,10 +1,10 @@
 //Dynamic form component that gets json data and renders the corresponding inputs
-import { yupResolver } from "@hookform/resolvers/yup";
-import { FormProvider, useForm } from "react-hook-form";
-import { CustomSelect, TextInput } from "@/src/components/common";
-import { InputProps, SchemaForm } from "@/src/types/form";
-import { Button } from "@/src/components/common";
 import clsx from "classnames";
+import { FormProvider, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { CustomSelect, TextInput } from "@/src/components/common";
+import { Button } from "@/src/components/common";
+import { InputProps, SchemaForm } from "@/src/types/form";
 
 interface IProps {
   onSubmit: (data: unknown) => void;
