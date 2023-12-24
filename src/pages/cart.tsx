@@ -3,11 +3,11 @@
 //render this page client side ro have more speed
 import React from "react";
 import Link from "next/link";
+import { toast } from "react-toastify";
 import { useCartStore } from "src/store/cartstore";
 import { IProject } from "@/src/types/project";
 import { CartItem } from "@/src/components/business/CartItem";
 import { Button } from "@/src/components/common";
-import { toast } from "react-toastify";
 
 function CartPage() {
   const { cart } = useCartStore();

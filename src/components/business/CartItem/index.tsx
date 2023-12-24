@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Image } from "@/src/components/common";
-import { useCartStore } from "src/store/cartstore";
-import { IProject } from "@/src/types/project";
+import { useCartStore } from "@/src/store/cartstore";
 import { ProjectFeature } from "@/src/components/business/Project/ProjectFeature";
+import { IProject } from "@/src/types/project";
 
 interface IProps {
   cartItem: IProject;

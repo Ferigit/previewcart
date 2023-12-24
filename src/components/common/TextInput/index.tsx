@@ -1,7 +1,7 @@
 //TextInput component support Controlled and Uncontrolled variants inside form 
+import clsx from "classnames";
 import { ErrorMessage } from "@/src/components/common/index";
 import { CustomInputProps } from "@/src/types/form";
-import clsx from "classnames";
 
 export const TextInput = ({
   id,

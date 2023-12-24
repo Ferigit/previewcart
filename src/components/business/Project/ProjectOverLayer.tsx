@@ -1,6 +1,6 @@
 import React from "react";
-import { IProject } from "@/src/types/project";
 import { Button } from "@/src/components/common";
+import { IProject } from "@/src/types/project";
 
 interface CardOverLayerProps {
   project: IProject;
