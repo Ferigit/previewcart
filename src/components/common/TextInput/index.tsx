@@ -20,7 +20,7 @@ export const TextInput = ({
   return (
     <div
       className={clsx(
-        "w-fit flex gap-1 flex-col min-h-20",
+        "w-fit flex gap-1 flex-col min-h-18",
         className?.container
       )}
     >

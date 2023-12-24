@@ -21,13 +21,8 @@ const validationSchema = Yup.object({
 });
 
 export const AddToCartForm: React.FC = () => {
-  const {
-    selectedProject,
-    setSelectedProject,
-    cart,
-    setCartItems,
-    addProjectToCart,
-  } = useCartStore();
+  const { selectedProject, setSelectedProject, cart, setCartItems } =
+    useCartStore();
 
   const formMethods = useForm({
     resolver: yupResolver(validationSchema),
@@ -86,7 +81,7 @@ export const AddToCartForm: React.FC = () => {
       >
         View Cart ({cart?.length})
       </Link>
-      <h2 className="mt-6 text-gray-800 text-3xl font-medium">Basket</h2>
+      <h2 className="md:mt-6 text-gray-800 text-3xl font-medium">Cart</h2>
 
       {selectedProject?.id ? (
         <>
@@ -96,7 +91,7 @@ export const AddToCartForm: React.FC = () => {
           <FormProvider {...formMethods}>
             <form
               onSubmit={formMethods.handleSubmit(onSubmit)}
-              className="flex flex-row gap-x-1 mb-4"
+              className="flex flex-row gap-x-1 md:mb-4"
             >
               <TextInput
                 name="volume"
