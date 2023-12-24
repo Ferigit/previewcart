@@ -4,11 +4,11 @@ Approach:
 
 1. PreviewCart application is created in stack Next.js, TypeScript, Tailwindcss, Jest, react-testing-library, Storybook.
 2. Marketplace (home page) is implemented and filters on projects list as query param is implemented.
-3. Cart page is created so and manage card is implemented, so, user can see the cart and update every project volumn or remove the project from cart by asking.(to improve we can get confirmation in modal)
+3. Cart page is created and manage card is also implemented, so, user can see the cart and update every project's volume or remove the project from cart.(todo: we can get confirmation in modal)
 4. Full dynamic form and validation which supports controlled and uncontrolled variants of unit components is implemented by react-hook-form and yup.
-5. Unit components such as TextInput, Select, Button, Form, Image are implemented.(todo we can complete the dynamic form to support all input types)
-6. Unit tests for TextInput component is implemented.(todo:we can complete all our own usecases tests).
-7. Storybook for TextInput and Button components are imlemented.(todo:we can complete all our own usecases stories).
+5. Unit components such as TextInput, Select, Button, Form, Image are implemented.(todo: we can complete the dynamic form to support all input types)
+6. Unit tests for TextInput component is implemented.(todo:we can complete all our own use cases tests).
+7. Storybook for TextInput and Button components are implemented.(todo:we can complete all our own use cases stories).
 8. Toast notification is added.
 9. Linter is configured.
 
@@ -30,7 +30,7 @@ git clone https://github.com/Ferigit/previewcart.git
 1. cd root dir
 2. pull main branch
 3. yarn (or npm install)
-4. yarn run dev (or npm run dev)
+4. yarn dev (or npm run dev)
 
 ```
 ## Run the Storybook

@@ -7,10 +7,18 @@ import { useCartStore } from "src/store/cartstore";
 import { IProject } from "@/src/types/project";
 import { CartItem } from "@/src/components/business/CartItem";
 import { Button } from "@/src/components/common";
+import { toast } from "react-toastify";
 
 function CartPage() {
   const { cart } = useCartStore();
-
+  const handleCheckout = () => {
+    toast("Checkout successfully!", {
+      hideProgressBar: true,
+      autoClose: 2000,
+      type: "success",
+      position: "top-right",
+    });
+  };
   return (
     <section className="container mx-auto p-4">
       <Link href="/" className={" text-blue-600 "}>
@@ -26,7 +34,11 @@ function CartPage() {
         })}
       </div>
       <div className="flex justify-center items-center">
-        <Button label="Checkout" className="	w-full md:w-28 h-12 my-4 mx-auto" />
+        <Button
+          label="Checkout"
+          className="	w-full md:w-28 h-12 my-4 mx-auto"
+          onClick={handleCheckout}
+        />
       </div>
     </section>
   );
