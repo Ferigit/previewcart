@@ -10,7 +10,8 @@ Approach:
 6. Unit tests for TextInput component is implemented.(todo:we can complete all our own use cases tests).
 7. Storybook for TextInput and Button components are implemented.(todo:we can complete all our own use cases stories).
 8. Toast notification is added.
-9. Linter is configured.
+9. Gets the projects list by getStaticProps and revalidates the list everyday
+10. Linter is configured.
 
 
 ## How to Use
